@@ -94,7 +94,7 @@ export default function App() {
       `*ENDEREÇO DE INSTALAÇÃO*%0A` +
       `*Rua:* ${formData.street}, ${formData.number}%0A` +
       `*Bairro:* ${formData.neighborhood}%0A` +
-      `*CEP:* ${formData.zipCode}%0A` +
+      `*CEP:* ${formData.zipCode || 'Não informado'}%0A` +
       `*Cidade:* ${formData.city}`;
 
     if (withPersonalData) {
@@ -692,9 +692,8 @@ export default function App() {
                             />
                           </div>
                           <div>
-                            <label className="text-[10px] font-black uppercase tracking-widest text-white/40 mb-2 block">CEP</label>
+                            <label className="text-[10px] font-black uppercase tracking-widest text-white/40 mb-2 block">CEP (Opcional)</label>
                             <input 
-                              required
                               name="zipCode"
                               value={formData.zipCode}
                               onChange={handleInputChange}
