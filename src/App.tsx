@@ -148,24 +148,32 @@ export default function App() {
         </div>
       </nav>
 
+      {/* Global Abstract Background */}
+      <div className="fixed inset-0 z-[-1] pointer-events-none opacity-20">
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/30 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-600/30 rounded-full blur-[120px] animate-pulse delay-700" />
+        <div className="absolute top-[20%] right-[10%] w-[30%] h-[30%] bg-green-500/20 rounded-full blur-[100px] animate-pulse delay-1000" />
+        <div className="absolute bottom-[20%] left-[10%] w-[30%] h-[30%] bg-red-500/20 rounded-full blur-[100px] animate-pulse delay-1500" />
+      </div>
+
       {/* Impactful Hero Section */}
       <header className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020202] via-transparent to-transparent z-10" />
           <motion.img 
             initial={{ scale: 1.2, opacity: 0 }}
-            animate={{ scale: 1, opacity: 0.4 }}
+            animate={{ scale: 1, opacity: 0.5 }}
             transition={{ duration: 2.5 }}
-            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=60&w=1600" 
-            alt="Cyberpunk Server" 
+            src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1600" 
+            alt="Abstract Colorful Background" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
           {/* Animated Glows */}
-          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[150px] animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] animate-pulse delay-1000" />
+          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-600/30 rounded-full blur-[150px] animate-pulse" />
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] animate-pulse delay-1000" />
         </div>
 
         <div className="container mx-auto px-6 relative z-20">
@@ -180,11 +188,13 @@ export default function App() {
                 <span className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-400">Fibra Ótica de Alta Performance</span>
               </div>
               
-              <p className="text-white text-4xl md:text-6xl font-display font-bold leading-[1.1] tracking-tight mb-12 max-w-2xl uppercase italic">
-                Economize agora! <br />
+              <div className="relative text-white text-4xl md:text-6xl font-display font-bold leading-[1.1] tracking-tight mb-12 max-w-2xl uppercase italic">
+                <span className="relative z-10">Economize agora!</span>
+                <div className="absolute -top-10 -left-10 w-full h-full bg-gradient-to-br from-blue-600/20 to-purple-600/20 blur-3xl -z-10 animate-pulse" />
+                <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-400 to-purple-600">Comparamos as ofertas mais baratas</span> das melhores operadoras para você ter fibra ótica real sem pagar caro. <br />
                 <span className="text-white/40 text-2xl md:text-3xl not-italic font-light">Planos a partir de <span className="text-white font-bold">R$ 99,90</span>.</span>
-              </p>
+              </div>
 
               <div className="flex flex-wrap gap-8 items-center">
                 <a href="#planos" className="px-12 py-6 bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-[0.2em] transition-all flex items-center gap-4 group shadow-[0_20px_50px_rgba(37,99,235,0.4)] rounded-2xl">

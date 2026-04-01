@@ -77,11 +77,11 @@ export const PLANS: Plan[] = [
     logoUrl: 'https://telesintese.com.br/wp-content/uploads/2025/05/nio.jpg'
   },
   {
-    id: 'tim-500',
+    id: 'tim-400',
     operator: 'tim',
-    name: 'Tim Ultrafibra 500',
-    speed: '500 Mega',
-    price: 99.99,
+    name: 'Tim Ultrafibra 400',
+    speed: '400 Mega',
+    price: 89.99,
     advantages: [
       'Paramount+ Incluso',
       'Babbel Incluso',
@@ -92,33 +92,93 @@ export const PLANS: Plan[] = [
     logoUrl: 'https://raichu-uploads.s3.amazonaws.com/logo_live-tim_PsDULb.png'
   },
   {
-    id: 'tim-1000',
+    id: 'tim-600',
     operator: 'tim',
-    name: 'Tim Ultrafibra 1G',
-    speed: '1 Giga',
+    name: 'Tim Ultrafibra 600',
+    speed: '600 Mega',
     price: 129.99,
     advantages: [
-      'HBO Max + Paramount+',
-      'Globoplay Incluso',
-      'Wi-Fi 6 Gamer',
-      'Prioridade de Rede'
+      'HBO Max Incluso',
+      'Paramount+ Incluso',
+      'Babbel Incluso',
+      'Wi-Fi Premium'
     ],
     flyerUrl: 'https://picsum.photos/seed/tim2/400/600',
     logoUrl: 'https://raichu-uploads.s3.amazonaws.com/logo_live-tim_PsDULb.png'
   },
   {
-    id: 'claro-500',
-    operator: 'claro',
-    name: 'Claro Fibra 500',
-    speed: '500 Mega',
-    price: 99.90,
+    id: 'tim-700',
+    operator: 'tim',
+    name: 'Tim Ultrafibra 700',
+    speed: '700 Mega',
+    price: 109.99,
+    advantages: [
+      'Paramount+ Incluso',
+      'Babbel Incluso',
+      'Wi-Fi de Alta Performance',
+      'Instalação Grátis'
+    ],
+    flyerUrl: 'https://picsum.photos/seed/tim3/400/600',
+    logoUrl: 'https://raichu-uploads.s3.amazonaws.com/logo_live-tim_PsDULb.png'
+  },
+  {
+    id: 'tim-1000',
+    operator: 'tim',
+    name: 'Tim Ultrafibra 1 Giga',
+    speed: '1 Giga',
+    price: 129.99,
     advantages: [
       'Globoplay Incluso',
-      'Câmeras BBB 26 Exclusivas',
-      'Wi-Fi Plus',
+      'Paramount+ Incluso',
+      'Wi-Fi 6 Gamer',
+      'Prioridade de Rede'
+    ],
+    flyerUrl: 'https://picsum.photos/seed/tim4/400/600',
+    logoUrl: 'https://raichu-uploads.s3.amazonaws.com/logo_live-tim_PsDULb.png'
+  },
+  {
+    id: 'tim-2000',
+    operator: 'tim',
+    name: 'Tim Ultrafibra 2 Giga',
+    speed: '2 Giga',
+    price: 369.99,
+    advantages: [
+      'HBO Max + Paramount+',
+      'Looke Incluso',
+      'Wi-Fi 7 de Última Geração',
+      'Suporte VIP 24h'
+    ],
+    flyerUrl: 'https://picsum.photos/seed/tim5/400/600',
+    logoUrl: 'https://raichu-uploads.s3.amazonaws.com/logo_live-tim_PsDULb.png'
+  },
+  {
+    id: 'claro-350',
+    operator: 'claro',
+    name: 'Claro Fibra 350',
+    speed: '350 Mega',
+    price: 89.90,
+    advantages: [
+      'Globoplay Incluso',
+      'Wi-Fi Grátis',
+      'ChatGPT Plus (2 meses)',
       'Claro Video'
     ],
     flyerUrl: 'https://picsum.photos/seed/claro1/400/600',
+    logoUrl: 'https://me-cdn.com/lp/internet/claro-fibra.jpg'
+  },
+  {
+    id: 'claro-600',
+    operator: 'claro',
+    name: 'Claro Fibra 600',
+    speed: '600 Mega',
+    price: 99.90,
+    advantages: [
+      'Globoplay Incluso',
+      'Wi-Fi Grátis',
+      'ChatGPT Plus (2 meses)',
+      'Claro Video'
+    ],
+    flyerUrl: 'https://picsum.photos/seed/claro3/400/600',
     logoUrl: 'https://me-cdn.com/lp/internet/claro-fibra.jpg'
   },
   {
